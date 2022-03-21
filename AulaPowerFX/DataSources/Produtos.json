@@ -1,0 +1,20 @@
+[
+  {
+    "Data": "[{\"Categoria\":\"Ferramentas\",\"ID\":\"001\",\"Local \":\"Galp\\u00E3o Alpha\",\"Nome Produto\":\"Aplicador de fita\",\"Pre\\u00E7o Unitario\":15.9},{\"Categoria\":\"Caixa\",\"ID\":\"002\",\"Local \":\"Galp\\u00E3o Tango\",\"Nome Produto\":\"Caixa Baixa\",\"Pre\\u00E7o Unitario\":5.9},{\"Categoria\":\"Caixa\",\"ID\":\"003\",\"Local \":\"Galp\\u00E3o Alpha\",\"Nome Produto\":\"Caixa Branca\",\"Pre\\u00E7o Unitario\":8.9},{\"Categoria\":\"Caixa\",\"ID\":\"004\",\"Local \":\"Galp\\u00E3o Alpha\",\"Nome Produto\":\"Caixa Correios \",\"Pre\\u00E7o Unitario\":9.8},{\"Categoria\":\"Caixa\",\"ID\":\"005\",\"Local \":\"Galp\\u00E3o Tango\",\"Nome Produto\":\"Caixa M\\u00E9dia\",\"Pre\\u00E7o Unitario\":11.5},{\"Categoria\":\"Caixa\",\"ID\":\"006\",\"Local \":\"Galp\\u00E3o Tango\",\"Nome Produto\":\"Caixa  Vertical\",\"Pre\\u00E7o Unitario\":16.9},{\"Categoria\":\"Fita\",\"ID\":\"102\",\"Local \":\"Galp\\u00E3o\",\"Nome Produto\":\"Fita crepe de 30m\",\"Pre\\u00E7o Unitario\":9.2}]",
+    "IsSampleData": false,
+    "IsWritable": false,
+    "Name": "Produtos",
+    "OrderedColumnNames": [
+      "Nome Produto",
+      "ID",
+      "Preço Unitario",
+      "Categoria",
+      "Local "
+    ],
+    "OriginalName": "Produtos",
+    "OriginalSchema": "*[Categoria:s, ID:s, 'Local ':s, 'Nome Produto':s, 'Preço Unitario':n]",
+    "Schema": "*[Categoria:s, ID:s, 'Local ':s, 'Nome Produto':s, 'Preço Unitario':n]",
+    "Token": "dummyToken",
+    "Type": "StaticDataSourceInfo"
+  }
+]

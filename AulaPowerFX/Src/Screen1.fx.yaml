@@ -1,0 +1,227 @@
+Screen1 As screen:
+
+    Label1 As label:
+        LineHeight: ="Nome"
+        Text: ="Nome"
+        X: =567
+        Y: =44
+        ZIndex: =1
+
+    Label2 As label:
+        LineHeight: ="Sobrenome"
+        Text: ="Sobrenome"
+        X: =767
+        Y: =41
+        ZIndex: =2
+
+    Label3 As label:
+        Text: ="Nome Sobrenome"
+        Width: =316
+        X: =993
+        Y: =44
+        ZIndex: =3
+
+    Label4 As label:
+        Height: =48
+        Text: ="Digite uma Frase"
+        Width: =636
+        X: =46
+        Y: =204
+        ZIndex: =4
+
+    Label5 As label:
+        Text: ="Resultado"
+        X: =993
+        Y: =208
+        ZIndex: =5
+
+    Label6 As label:
+        Text: ="Busca"
+        X: =46
+        Y: =354
+        ZIndex: =6
+
+    txtNome As text:
+        Default: |-
+            ="
+            "
+        FontWeight: =FontWeight.Semibold
+        Height: =46
+        LineHeight: =""
+        Width: =181
+        X: =567
+        Y: =98
+        ZIndex: =7
+
+    txtSobrenome As text:
+        Default: =""
+        Height: =47
+        LineHeight: |
+            =""
+        Width: =202
+        X: =772
+        Y: =97
+        ZIndex: =8
+
+    txtNomeSobrenome As text:
+        Default: =Concatenate(txtNome," ",txtSobrenome)
+        Height: =47
+        X: =993
+        Y: =97
+        ZIndex: =9
+
+    txtFrase As text:
+        Default: =""
+        Height: =48
+        Width: =702
+        X: =46
+        Y: =266
+        ZIndex: =10
+
+    txtResultado As text:
+        Default: =Right(txtFrase,Sld)
+        Height: =48
+        X: =993
+        Y: =266
+        ZIndex: =11
+
+    txtBusca As text:
+        Default: =""
+        X: =46
+        Y: =409
+        ZIndex: =12
+
+    Label7 As label:
+        Text: =User().FullName
+        Width: =362
+        X: =172
+        Y: =51
+        ZIndex: =14
+
+    Label8 As label:
+        Text: =User().Email
+        Width: =362
+        X: =172
+        Y: =100
+        ZIndex: =15
+
+    Sld As slider:
+        Max: =Len(txtFrase)
+        Width: =202
+        X: =772
+        Y: =274
+        ZIndex: =16
+
+    Rating1 As rating:
+        Default: =3
+        DisabledFill: =Self.Fill
+        DisplayMode: =DisplayMode.Edit
+        FocusedBorderColor: =Self.BorderColor
+        Height: =40
+        HoverFill: =Self.Fill
+        PressedFill: =Self.Fill
+        Width: =200
+        X: =46
+        Y: =498
+        ZIndex: =17
+
+    Button1 As button:
+        OnSelect: |-
+            =Reset(txtBusca);
+            Notify("O campo busca foi resetado")
+        Text: ="Botão"
+        X: =46
+        Y: =587
+        ZIndex: =18
+
+    DataTable1 As dataTable.datatable:
+        BorderStyle: =BorderStyle.Solid
+        DisplayMode: =DisplayMode.Edit
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =392
+        Items: |-
+            =Filter(
+                Produtos,
+                StartsWith('Nome Produto',txtBusca.Text)
+            )
+        Width: =897
+        X: =404
+        Y: =364
+        ZIndex: =19
+
+        ID_Column1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="ID"
+            FieldName: ="ID"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =1
+            Text: =ThisItem.ID
+            Width: =172
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+        Categoria_Column1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Categoria"
+            FieldName: ="Categoria"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =2
+            Text: =ThisItem.Categoria
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =2
+
+        "'Nome Produto_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Nome Produto"
+            FieldName: ="Nome Produto"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =3
+            Text: =ThisItem.'Nome Produto'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =3
+
+        "'Local _Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Local "
+            FieldName: ="Local "
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =4
+            Text: =ThisItem.'Local '
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =4
+
+        "'Preço Unitario_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Preço Unitario"
+            FieldName: ="Preço Unitario"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =5
+            Text: =ThisItem.'Preço Unitario'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =5
+
+    Image2 As image:
+        Image: =User().Image
+        X: =40
+        Y: =40
+        ZIndex: =20
+

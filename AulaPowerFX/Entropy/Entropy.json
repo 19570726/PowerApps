@@ -1,0 +1,92 @@
+{
+  "ComponentIndexes": {},
+  "ControlUniqueIds": {
+    "App": 1,
+    "Button1": 22,
+    "Categoria_Column1": 26,
+    "DataTable1": 23,
+    "ID_Column1": 25,
+    "Image2": 24,
+    "Label1": 4,
+    "Label2": 5,
+    "Label3": 6,
+    "Label4": 7,
+    "Label5": 8,
+    "Label6": 9,
+    "Label7": 18,
+    "Label8": 19,
+    "Local _Column1": 28,
+    "Nome Produto_Column1": 27,
+    "Preço Unitario_Column1": 29,
+    "Rating1": 21,
+    "Screen1": 3,
+    "Sld": 20,
+    "txtBusca": 16,
+    "txtFrase": 14,
+    "txtNome": 10,
+    "txtNomeSobrenome": 13,
+    "txtResultado": 15,
+    "txtSobrenome": 11
+  },
+  "FunctionParamsInvariantScripts": {},
+  "HeaderLastSavedDateTimeUTC": "03/21/2022 18:31:51",
+  "IsLegacyComponentAllowGlobalScopeCase": false,
+  "LocalDatabaseReferencesAsEmpty": false,
+  "LocalResourceFileNames": {},
+  "LocalResourceRootPaths": {},
+  "OrderComponentMetadata": {},
+  "OrderComponentTemplate": {},
+  "OrderDataSource": {
+    "Produtos": 0
+  },
+  "OrderGroupControls": {},
+  "OrderTemplate": {},
+  "OrderXMLTemplate": {
+    "button": 5,
+    "image": 0,
+    "label": 1,
+    "rating": 4,
+    "slider": 3,
+    "text": 2
+  },
+  "PublishOrderIndices": {
+    "App": 0,
+    "Button1": 23,
+    "Categoria_Column1": 17,
+    "DataTable1": 15,
+    "ID_Column1": 16,
+    "Image2": 0,
+    "Label1": 2,
+    "Label2": 1,
+    "Label3": 3,
+    "Label4": 9,
+    "Label5": 10,
+    "Label6": 14,
+    "Label7": 4,
+    "Label8": 8,
+    "Local _Column1": 19,
+    "Nome Produto_Column1": 18,
+    "Preço Unitario_Column1": 20,
+    "Rating1": 22,
+    "Screen1": 0,
+    "Sld": 13,
+    "txtBusca": 21,
+    "txtFrase": 11,
+    "txtNome": 7,
+    "txtNomeSobrenome": 6,
+    "txtResultado": 12,
+    "txtSobrenome": 5
+  },
+  "ResourcesJsonIndices": {
+    "Image-SampleImage": 0
+  },
+  "TemplateVersions": {},
+  "VolatileProperties": {
+    "AnalysisLoadTime": 0.0405102,
+    "ControlCount": {
+      "screen": 1
+    },
+    "DeserializationLoadTime": 0.8378501,
+    "ErrorCount": 0
+  }
+}
